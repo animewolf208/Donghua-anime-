@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+header .actions input {
+    padding: 5px;
+    margin-right: 10px;
+}
+main {
+    padding: 20px;
+}
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.tag {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+.ongoing {
+    background: orange;
+    color: white;
+}
+.completed {
+    background: green;
+    color: white;
+}
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+.dark-mode header {
+    background-color: #000;
+}
+.dark-mode .card {
+    background: #1f1f1f;
+}
